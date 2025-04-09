@@ -1,5 +1,5 @@
 import NavBar from "./navBar/NavBar";
-import Footer from "./Footer/Footer";
+import Footer from "./footer/Footer";
 
 import NotFound from "./NotFound";
 

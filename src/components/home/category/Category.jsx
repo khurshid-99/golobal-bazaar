@@ -3,7 +3,7 @@ import React from "react";
 const Category = () => {
   return (
     <div className="w-full h-[50vh] px-[5vw] relative overflow-hidden mb-10 ">
-      <div className="w-full h-full object-cover bg-center bg-[url('./Slicing/Category/back-image-category.jpg')] ">
+      <div className="w-full h-full object-cover bg-center bg-[url('/Slicing/Category/back-image-category.jpg')] ">
         <div className="px-[5vw] pt-[3vw] pb-[2vw] ">
           <h1 className="text-[3vw] ">
             Our Best <strong>Category</strong>{" "}

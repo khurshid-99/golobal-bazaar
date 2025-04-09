@@ -17,7 +17,7 @@ const TrandingPlant = () => {
         {/* carts */}
         <div className="w-[18.7vw] h-[22vw]">
           <img
-            src="public/Slicing/Popular product/image_1.jpg"
+            src="/Slicing/Popular product/image_1.jpg"
             alt=""
             className="w-full h-[14vw] object-cover bg-center "
           />
@@ -43,7 +43,7 @@ const TrandingPlant = () => {
         </div>
         <div className="w-[18.7vw] h-[22vw]">
           <img
-            src="public/Slicing/Popular product/image_1.jpg"
+            src="/Slicing/Popular product/image_1.jpg"
             alt=""
             className="w-full h-[14vw] object-cover bg-center "
           />
@@ -69,7 +69,7 @@ const TrandingPlant = () => {
         </div>
         <div className="w-[18.7vw] h-[22vw]">
           <img
-            src="public/Slicing/Popular product/image_1.jpg"
+            src="/Slicing/Popular product/image_1.jpg"
             alt=""
             className="w-full h-[14vw] object-cover bg-center "
           />
@@ -95,7 +95,7 @@ const TrandingPlant = () => {
         </div>
         <div className="w-[18.7vw] h-[22vw]">
           <img
-            src="public/Slicing/Popular product/image_1.jpg"
+            src="/Slicing/Popular product/image_1.jpg"
             alt=""
             className="w-full h-[14vw] object-cover bg-center "
           />

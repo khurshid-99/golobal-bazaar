@@ -4,7 +4,7 @@ const PostByRequirement = () => {
   return (
     <div className="w-full h-[114vh] relative p-[5vw]  ">
       <img
-        src="public/Slicing/Post Buy Requirement/back-image.jpg"
+        src="/Slicing/Post Buy Requirement/back-image.jpg"
         alt=""
         className="w-full h-full object-cover"
       />
@@ -85,7 +85,7 @@ const PostByRequirement = () => {
                 <select name="" id="" className="text-xl">
                   <option value="">
                     <img
-                      src="public/Slicing/Post Buy Requirement/flag.png"
+                      src="/Slicing/Post Buy Requirement/flag.png"
                       alt=""
                       className="w-[2rem] h-[2rem] object-cover "
                     />
@@ -106,7 +106,7 @@ const PostByRequirement = () => {
               <div className="p-6 rounded-xl bg-[#FDFDFD] drop-shadow-2xl mt-5 mb-10 flex items-center">
                 <label htmlFor="looking">
                   <img
-                    src="public/Slicing/Header/search-icon.png"
+                    src="/Slicing/Header/search-icon.png"
                     alt=""
                     className="mr-4"
                   />
@@ -124,7 +124,7 @@ const PostByRequirement = () => {
               <div className="p-6 rounded-xl bg-[#FDFDFD] drop-shadow-2xl mt-5  ">
                 <div className="inline-block ">
                   <img
-                    src="public/Slicing/Post Buy Requirement/microfone.png"
+                    src="/Slicing/Post Buy Requirement/microfone.png"
                     alt=""
                     className="inline-block"
                   />
@@ -141,7 +141,7 @@ const PostByRequirement = () => {
                 <button className="uppercase flex items-center justify-center bg-[#F79311] px-17 py-6 rounded-full text-white tracking-[2px] text-sm ">
                   submit
                   <img
-                    src="public/Slicing/Banner/button-arrow.png"
+                    src="/Slicing/Banner/button-arrow.png"
                     alt=""
                     className=" "
                   />

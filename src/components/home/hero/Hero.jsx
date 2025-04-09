@@ -25,7 +25,7 @@ const Hero = () => {
             <div className="inline-block mt-20 ">
               <div className="flex w-fit items-center gap-x-3 px-15 py-6 rounded-[50px] bg-white text-black font-medium ">
                 <button className="uppercase ">Shope Now </button>
-                <img src="public/Slicing/Banner/button-arrow.png" alt="" />
+                <img src="/Slicing/Banner/button-arrow.png" alt="" />
               </div>
             </div>
           </div>

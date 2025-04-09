@@ -5,7 +5,7 @@ const Payment = () => {
     <div className="w-full h-[25vh] px-[5vw] bg-[#F7F7F7]">
       <div className="w-[20vw] h-full gap-x-5 flex items-center ">
         <img
-          src="public/Slicing/Banner/Security.png"
+          src="/Slicing/Banner/Security.png"
           alt=""
           className="mb-[16px] "
         />

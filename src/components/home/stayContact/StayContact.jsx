@@ -38,7 +38,7 @@ const StayContact = () => {
               className="bg-transparent border-b-2 w-full px-[5vw] lg:px-0 lg:w-[20vw] py-2 outline-none "
             />
             <button className="bg-black p-3 ml-5 rounded-full">
-              <img src="public/Slicing/arrow-right-long-line.png" alt="" />
+              <img src="/Slicing/arrow-right-long-line.png" alt="" />
             </button>
           </form>
         </div>

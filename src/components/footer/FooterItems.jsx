@@ -17,7 +17,7 @@ const FooterItems = () => {
             drive results and transform businesses
           </h4>
         </section>
-        <aside className="w-full lg:w-1/2 mt-10 lg:mt-0 flex items-start justify-between text-[#f1f1f1b4]">
+        <aside className="w-full lg:w-1/2 mt-10 lg:mt-0 flex flex-col lg:flex-row items-start justify-between text-[#f1f1f1b4]">
           <div>
             <h1 className="text-[#ff7e00] uppercase text-[1rem]  ">
               Quick Link

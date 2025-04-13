@@ -1,9 +1,10 @@
 import React from "react";
 
 const Payment = () => {
+  // bg-[#F7F7F7]
   return (
-    <div className="w-full h-[25vh] px-[5vw] bg-[#F7F7F7]">
-      <div className="w-[20vw] h-full gap-x-5 flex items-center ">
+    <div className="w-full h-[35vh] xl:h-[25vh] px-[5vw] bg-[#ff3974] relative ">
+      <div className="w-[80vw] lg:w-[35vw] xl:w-[20vw] h-full gap-x-5 flex items-center ">
         <img
           src="/Slicing/Banner/Security.png"
           alt=""

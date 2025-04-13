@@ -2,41 +2,46 @@ import React from "react";
 
 const ClientSays = () => {
   return (
-    <div className="w-full h-[80vh] p-[5vw] flex items-center justify-center ">
-      <div className="w-1/2 h-full ">
+    <div className="w-full h-[90vh] lg:h-[100vh] xl:h-[80vh] p-[5vw] flex flex-col lg:flex-row items-center justify-center ">
+      <div className="w-full h-[70vw] lg:w-1/2 lg:h-full ">
         <img
           src="/Slicing/testimonial/image.jpg"
           alt=""
           className="w-full h-full object-cover bg-center"
         />
       </div>
-      <div className="w-1/2 h-full pl-[5vw] relative ">
+      <div className="w-full h-[90vw] lg:w-1/2 lg:h-full pl-[5vw] relative ">
         <img
           src="/Slicing/testimonial/quote.png"
           alt=""
-          className="left-150 top-5 relative "
+          className="w-[9vw] lg:w-[4vw] xl:w-[3.3vw] left-[70vw] top-3 lg:left-[33vw] lg:top-5 relative "
         />
-        <h1 className="font-light text-[2.5vw] ">
+        <h1 className="font-light text-[7vw] lg:text-[3.3vw] xl:text-[2.5vw] ">
           What our <span className="font-semibold">Client Says</span>{" "}
         </h1>
         {/* cart */}
-        <div className="mt-15 w-full h-[19.2vw] relative ">
-          <p className="text-[1.50rem] text-[#777777] font-light leading-10 ">
+        <div className="lg:mt-10 xl:mt-15 w-full h-[35.5vw] xl:h-[19.2vw] relative">
+          <p className="text-[4vw] lg:text-[1.8vw] xl:text-[1.50rem] text-[#777777] font-light xl:leading-10 ">
             Freundliche und sachliche Vorbereitung und Asufuhrung der <br />{" "}
-            Bestattung meiner Mutter. Dieses Bestattungshaus ist serios <br />{" "}
-            und auf jeden Fall weiter zu empfehlen ..
+            Bestattung meiner Mutter.{" "}
+            <span className="invisible lg:visible">
+              Dieses Bestattungshaus ist serios <br /> und auf jeden Fall weiter
+              zu empfehlen ..
+            </span>
           </p>
-          <div className="flex items-center gap-x-5 absolute bottom-20 ">
+          <div className="flex items-center gap-x-5 absolute lg:bottom-20 ">
             <img src="/Slicing/testimonial/man-image.png" alt="" />
             <div>
-              <h1 className="text-3xl font-semibold ">John Smith</h1>
-              <h2 className="text-[#777777] text-xl">Lorem Ipsum</h2>
+              <h1 className="text-[6vw] lg:text-3xl font-semibold ">
+                John Smith
+              </h1>
+              <h2 className="text-[#777777] text-[4vw] lg:text-xl">
+                Lorem Ipsum
+              </h2>
             </div>
           </div>
         </div>
-        <div>
-          
-        </div>
+        <div></div>
       </div>
     </div>
   );

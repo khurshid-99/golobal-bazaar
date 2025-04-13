@@ -2,93 +2,101 @@ import React from "react";
 
 const PostByRequirement = () => {
   return (
-    <div className="w-full h-[114vh] relative p-[5vw]  ">
-      <img
-        src="/Slicing/Post Buy Requirement/back-image.jpg"
-        alt=""
-        className="w-full h-full object-cover"
-      />
-      <div className="absolute top-0 left-0 w-full h-full p-[5vw] flex items-center justify-center">
+    <div className="w-full min-h-screen lg:h-[135vh] xl:h-[110vh] relative p-[5vw] ">
+      <div className="bg-[white] lg:bg-[url(/Slicing/PostBuyRequirement/back-image.jpg)] w-full h-full object-cover bg-cover bg-no-repeat flex flex-col lg:flex-row items-center justify-center">
         {/* section Left */}
-        <section className="w-1/2 h-full p-[5vw] text-white ">
+        <section className="w-full h-[45vh] lg:w-1/2 lg:h-full p-[5vw] text-white bg-[url(/Slicing/PostBuyRequirement/back-image.jpg)] lg:bg-[url()] bg-cover bg-center bg-no-repeat ">
           {/*  */}
-          <h1 className="text-[2.5vw] font-light ">Nurturing Nature's</h1>
-          <h1 className="text-[2.5vw] font-medium ">Beauty Lorem Ipsum</h1>
+          <h1 className=" text-[6vw] lg:text-[3vw] xl:text-[2.2vw] font-light ">
+            Nurturing Nature's
+          </h1>
+          <h1 className="text-[7vw] lg:text-[3.3vw] xl:text-[2.44vw] text-nowrap font-medium ">
+            Beauty Lorem Ipsum
+          </h1>
           {/*  */}
-          <div className=" border border-[#ffffff4d] flex flex-col items-center justify-center w-full  h-[25vw] my-20 relative ">
+          <div className=" border border-[#ffffff4d] flex flex-col items-center justify-center w-full h-[50vw] lg:h-[25vw] my-10 lg:my-20 relative ">
             {/* this is line */}
-            <div className="w-[10rem] h-[1px] bg-[#ffffff4d] origin-bottom rotate-90 absolute top-38 " />
-            <div className="w-[15rem] h-[1px] bg-[#ffffff4d] rotate-0 absolute top-1/2 left-21 " />
-            <div className="w-[10rem] h-[1px] bg-[#ffffff4d] origin-bottom rotate-90 absolute top-82 " />
-            <div className="w-[15rem] h-[1px] bg-[#ffffff4d] origin-bottom rotate-0 absolute right-21 top-1/2 " />
+            <div className="w-[20vw] lg:w-[9vw] h-[1px] bg-[#ffffff4d] origin-bottom rotate-90 absolute top-[13vw] lg:top-[7.4vw] " />
+            <div className="w-[20vw] lg:w-[9vw] h-[1px] bg-[#ffffff4d] origin-bottom rotate-90 absolute bottom-[13vw] lg:top-[17.44vw] " />
+            <div className="w-[34vw] lg:w-[12.5vw] h-[1px] bg-[#ffffff4d] rotate-0 absolute top-1/2 left-[4.2vw] " />
+            <div className="w-[34vw] lg:w-[12.5vw] h-[1px] bg-[#ffffff4d] origin-bottom rotate-0 absolute right-[4.2vw] top-1/2 " />
 
             {/* This is box */}
             <div className="flex items-center justify-between gap-1 w-full h-1/2 ">
               {/* This is Box -1 */}
-              <div className="w-1/2 h-full flex flex-col items-center justify-center gap-5 ">
+              <div className="w-1/2 h-full flex flex-col items-center justify-center xl:gap-5 ">
                 <div className="">
-                  <span className="inline-block w-[2px] h-[15px] mr-5 bg-[#FFA700] "></span>
-                  <h1 className="inline-block uppercase tracking-[4px] text-[1.1rem] font-medium ">
+                  <span className="inline-block w-[2px] h-[10px] xl:h-[15px] mr-5 bg-[#FFA700] "></span>
+                  <h1 className="inline-block uppercase tracking-[4px] text-[3vw] lg:text-[1.3vw] xl:text-[1.1rem] font-medium ">
                     Request
                   </h1>
                 </div>
-                <h1 className="text-5xl font-semibold ">1035</h1>
+                <h1 className="text-[7vw] lg:text-[3.5vw] xl:text-5xl font-semibold ">
+                  1035
+                </h1>
               </div>
               {/* This is Box -2 */}
-              <div className="w-1/2 h-full flex flex-col items-center justify-center gap-5 ">
+              <div className="w-1/2 h-full flex flex-col items-center justify-center xl:gap-5 ">
                 <div className="">
-                  <span className="inline-block w-[2px] h-[15px] mr-5 bg-[#FFA700] "></span>
-                  <h1 className="inline-block uppercase tracking-[4px] text-[1.1rem] font-medium ">
+                  <span className="inline-block w-[2px] h-[10px] xl:h-[15px] mr-5 bg-[#FFA700] "></span>
+                  <h1 className="inline-block uppercase tracking-[4px] text-[3vw] lg:text-[1.3vw] xl:text-[1.1rem] font-medium ">
                     Quation
                   </h1>
                 </div>
-                <h1 className="text-5xl font-semibold ">875</h1>
+                <h1 className="text-[7vw] lg:text-[3.5vw] xl:text-5xl font-semibold ">
+                  875
+                </h1>
               </div>
             </div>
             <div className="flex items-center justify-center gap-1 w-full h-1/2 ">
               {/* This is Box -3 */}
-              <div className="w-1/2 h-full flex flex-col items-center justify-center gap-5 ">
+              <div className="w-1/2 h-full flex flex-col items-center justify-center xl:gap-5 ">
                 <div className="">
-                  <span className="inline-block w-[2px] h-[15px] mr-5 bg-[#FFA700] "></span>
-                  <h1 className="inline-block uppercase tracking-[4px] text-[1.1rem] font-medium ">
+                  <span className="inline-block w-[2px] h-[10px] xl:h-[15px] mr-5 bg-[#FFA700] "></span>
+                  <h1 className="inline-block uppercase tracking-[4px] text-[3vw] lg:text-[1.3vw] xl:text-[1.1rem] font-medium ">
                     Order
                   </h1>
                 </div>
-                <h1 className="text-5xl font-semibold ">1236</h1>
+                <h1 className="text-[7vw] lg:text-[3.5vw] xl:text-5xl font-semibold ">
+                  1236
+                </h1>
               </div>
               {/* This is Box -4 */}
-              <div className="w-1/2 h-full flex flex-col items-center justify-center gap-5 ">
+              <div className="w-1/2 h-full flex flex-col items-center justify-center xl:gap-5 ">
                 <div className="">
-                  <span className="inline-block w-[2px] h-[15px] mr-5 bg-[#FFA700] "></span>
-                  <h1 className="inline-block uppercase tracking-[4px] text-[1.1rem] font-medium ">
+                  <span className="inline-block w-[2px] h-[10px] xl:h-[15px] mr-5 bg-[#FFA700] "></span>
+                  <h1 className="inline-block uppercase tracking-[4px] text-[3vw] lg:text-[1.3vw] xl:text-[1.1rem] font-medium ">
                     Dispatch
                   </h1>
                 </div>
-                <h1 className="text-5xl font-semibold ">879</h1>
+                <h1 className="text-[7vw] lg:text-[3.5vw] xl:text-5xl font-semibold ">
+                  879
+                </h1>
               </div>
             </div>
             {/*  */}
           </div>
         </section>
         {/* section Right */}
-        <section className="w-1/2 h-full  pt-[6vw] ">
-          <div className="bg-[#ffffff] w-full h-full p-[5vw] ">
-            <h1 className="text-[3vw] ">
+        <section className="w-full h-[80vh] lg:w-1/2 lg:h-full pt-[6vw] ">
+          <div className="bg-[#ffffff] w-full h-full lg:p-[3vw] xl:p-[5vw] ">
+            <h1 className="text-[8vw] lg:text-[3.5vw] xl:text-[3vw] text-nowrap ">
               Post Buy <strong>Requirement</strong>
             </h1>
-            <h3 className="text-2xl text-nowrap mt-4 ">
+            <h3 className="text-[3vw] lg:text-[1.3vw] xl:text-[1.2vw] text-nowrap mt-4 ">
               Get the Best Deals and Exclusive Offers with{" "}
               <span className="text-[#FF9812] ">Golobal Bazaar</span>
             </h3>
             <form action="">
-              <div className=" p-4 rounded-xl bg-[#FDFDFD] drop-shadow-2xl mt-5 mb-8 flex items-center  ">
+              <div className="p-1 xl:p-4 rounded-xl bg-[#FDFDFD] drop-shadow-2xl mt-5 mb-8 flex items-center  ">
                 <select name="" id="" className="text-xl">
                   <option value="">
                     <img
-                      src="/Slicing/Post Buy Requirement/flag.png"
+                      src="/Slicing/PostBuyRequirement/flag.png"
                       alt=""
                       className="w-[2rem] h-[2rem] object-cover "
                     />
+                    91 +
                   </option>
                 </select>
                 <span className="inline-block w-[2px] h-[40px] bg-[#8a8a8a63] mx-5 "></span>
@@ -103,7 +111,7 @@ const PostByRequirement = () => {
               <label htmlFor="looking" className="text-lg text-[#4e4e4e] ">
                 Tell us about your requirement
               </label>
-              <div className="p-6 rounded-xl bg-[#FDFDFD] drop-shadow-2xl mt-5 mb-10 flex items-center">
+              <div className="p-3 xl:p-4 rounded-xl bg-[#FDFDFD] drop-shadow-2xl mt-2 lg:mt-5 mb-10 flex items-center">
                 <label htmlFor="looking">
                   <img
                     src="/Slicing/Header/search-icon.png"
@@ -115,7 +123,7 @@ const PostByRequirement = () => {
                   id="looking"
                   type="text"
                   placeholder="Enter the product you are looking for..."
-                  className="outline-none placeholder:text-xl text-xl w-full "
+                  className="outline-none placeholder:text-[1rem] xl:placeholder:text-xl text-xl w-full "
                 />
               </div>
               <label htmlFor="" className="text-lg">
@@ -124,7 +132,7 @@ const PostByRequirement = () => {
               <div className="p-6 rounded-xl bg-[#FDFDFD] drop-shadow-2xl mt-5  ">
                 <div className="inline-block ">
                   <img
-                    src="/Slicing/Post Buy Requirement/microfone.png"
+                    src="/Slicing/PostBuyRequirement/microfone.png"
                     alt=""
                     className="inline-block"
                   />
@@ -138,12 +146,12 @@ const PostByRequirement = () => {
                 />
               </div>
               <div className="flex justify-end mt-15 ">
-                <button className="uppercase flex items-center justify-center bg-[#F79311] px-17 py-6 rounded-full text-white tracking-[2px] text-sm ">
+                <button className="uppercase flex items-center justify-center bg-[#F79311] px-[9vw] py-[4vw] lg:px-[4.5vw] lg:py-[1.8vw] xl:px-[4vw] xl:py-[1.3vw] rounded-full text-white tracking-[2px] text-[3vw] lg:text-[1.1vw] xl:text-sm ">
                   submit
                   <img
                     src="/Slicing/Banner/button-arrow.png"
                     alt=""
-                    className=" "
+                    className="ml-2 "
                   />
                 </button>
               </div>

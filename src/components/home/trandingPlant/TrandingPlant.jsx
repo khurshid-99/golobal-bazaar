@@ -132,7 +132,7 @@ const TrandingPlant = () => {
               </div>
             </div>
           </SwiperSlide>
-          `<SwiperSlide>
+          <SwiperSlide>
             <div className="w-[70vw] h-[85vw] lg:w-[25vw] lg:h-[26vw] 2xl:w-[23vw] xl:h-[22vw] ">
               <img
                 src="/Slicing/Popular product/image_1.jpg"
@@ -161,7 +161,7 @@ const TrandingPlant = () => {
                 </button>
               </div>
             </div>
-          </SwiperSlide>`
+          </SwiperSlide>
           
         </Swiper>
 

@@ -1,6 +1,6 @@
 const StayContact = () => {
   return (
-    <div className="w-full lg:h-[60vh] xl:h-[50vh] flex flex-col lg:flex-row bg-[#ffffff] ">
+    <div className="w-full h-[65vh] lg:h-[60vh] xl:h-[70vh] 2xl:h-[50vh] flex flex-col lg:flex-row bg-[#ffffff] ">
       <section className="w-full lg:w-1/2 h-full px-[5vw] lg:px-0 lg:pl-[10vw] pt-[5vw] ">
         <h4 className="tracking-[2px] lg:text-[1.1rem] uppercase flex items-center ">
           Stay Connected{" "}
@@ -16,12 +16,12 @@ const StayContact = () => {
           We're a national and international moving company based in India.
           <br />
           Our target audience includes people relocating <br />
-          across states and overseas.
+          across states and overseas.
         </p>
       </section>
       <section className="w-full lg:w-1/2 h-full relative lg:pt-[8vw] lg:pl-[8vw] overflow-hidden ">
         <div
-          className=" w-[20rem] h-[20rem] lg:w-[25rem] lg:h-[25rem] xl:w-[35rem] xl:h-[35rem] bg-[#EFF2F7] absolute rounded-full -bottom-36 lg:-bottom-30 lg:-right-0 xl:-bottom-50 right-1 xl:right-30 z-49 
+          className=" w-[20rem] h-[20rem] lg:w-[25rem] lg:h-[25rem] xl:w-[27rem] xl:h-[27rem] 2xl:w-[35rem] 2xl:h-[35rem] bg-[#EFF2F7] absolute rounded-full -bottom-36 lg:-bottom-30 lg:-right-0 xl:-bottom-40 2xl:-bottom-50 right-1 xl:right-10 2xl:right-30 z-49 
       "
         ></div>
         <div className="z-50 w-full mt-5 lg:mt-0 relative px-[5vw] lg:px-0 ">

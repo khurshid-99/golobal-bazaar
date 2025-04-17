@@ -2,7 +2,7 @@ import React from "react";
 
 const WorkPlace = () => {
   return (
-    <div className="w-full h-[65vh] lg:h-[100vh] xl:h-[85vh] px-[5vw] mt-10 lg:mt-15 2xl:pt-25 ">
+    <div className="w-full h-[70vh] lg:h-[100vh] xl:h-[110vh] 2xl:h-[85vh] px-[5vw] mt-10 lg:mt-15 2xl:pt-25 ">
       <div className="w-full">
         <h1 className="text-center text-nowrap text-[1.5rem] lg:text-[3rem] 2xl:text-[3.5rem] font-[200]">
           Our Sucessful <span className="font-semibold">work & Plant</span>
@@ -15,9 +15,10 @@ const WorkPlace = () => {
           </span>
         </p>
       </div>
-      <div className="w-full h-[40vh] lg:h-[60vh] xl:h-[48vh] lg:mt-20 bg-[url('/Slicing/Workplace/back-image-workspace.jpg')] bg-no-repeat bg-cover object-center bg-left lg:bg-center ">
+      {/* --- */}
+      <div className="w-full h-[45vh] lg:h-[60vh] xl:h-[65vh] 2xl:h-[48vh] lg:mt-20 bg-[url('/Slicing/Workplace/back-image-workspace.jpg')] bg-no-repeat bg-cover object-center bg-left lg:bg-center ">
         <div className="flex justify-center">
-          <div className=" text-center w-[85vw] lg:w-[60vw] xl:w-[43vw] bg-[#FFFFFF] flex items-center justify-center rounded-full drop-shadow-xl py-1 pl-5 pr-1 lg:py-2 lg:pl-9 lg:pr-2 mt-15 2xl:mt-20 ">
+          <div className=" text-center w-[85vw] lg:w-[60vw] xl:w-[43vw] bg-[#ffffff] flex items-center justify-center rounded-full drop-shadow-xl py-1 pl-5 pr-1 lg:py-2 lg:pl-9 lg:pr-2 mt-15 2xl:mt-20 ">
             <input
               type="text"
               id="places"

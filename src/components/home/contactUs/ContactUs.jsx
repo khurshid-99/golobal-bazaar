@@ -3,13 +3,13 @@ import React from "react";
 const ContactUs = () => {
   return (
     <div
-      className="w-full min-h-[145vh] lg:h-[170vh] xl:h-[145vh] px-[5vw] "
+      className="w-full h-[180vh] min-h-[145vh] lg:h-[170vh] xl:h-[230vh] 2xl:h-[145vh] px-[5vw] "
       style={{
         background: "linear-gradient(145deg, #E4E9F2 55%, #EDF0F5 50%)",
       }}
     >
       {/* top */}
-      <div className="w-full min-h-[35vh] lg:h-[50vh] xl:h-[42vh] pt-[5vw] ">
+      <div className="w-full min-h-[35vh] lg:h-[50vh] xl:h-[60vh] 2xl:h-[42vh] pt-[5vw] ">
         <h4 className="text-center capitalize text-[1rem] lg:text-[1.2rem] leading-5 ">
           Contact Us <br />
           <span className="inline-block bg-[black] w-[2rem] h-[1.5px]  "></span>{" "}
@@ -24,9 +24,9 @@ const ContactUs = () => {
         </p>
       </div>
       {/* bottom */}
-      <div className="w-full lg:h-[100vh] xl:h-[85vh] min-h-[85vh] flex flex-col lg:flex-row items-center justify-center ">
+      <div className="w-full lg:h-[100vh] xl:h-[150vh] 2xl:h-[85vh] min-h-[85vh] flex flex-col lg:flex-row items-center justify-center ">
         {/* section left */}
-        <div className="w-full lg:w-[35vw] xl:w-[25vw] lg:h-[100vh] xl:h-[85vh] min-h-[85vh] px-[3vw] py-[5vw] bg-[#1A1E25] flex flex-col justify-between ">
+        <div className="w-full lg:w-[35vw] 2xl:w-[25vw] lg:h-full xl:h-full 2xl:h-full px-[3vw] py-[5vw] bg-[#1A1E25] flex flex-col justify-between ">
           <div>
             <h4 className="text-[1.5rem] font-medium text-[#FFDC7A] ">
               Hi there
@@ -54,7 +54,7 @@ const ContactUs = () => {
           </div>
         </div>
         {/* section righi */}
-        <div className="w-full lg:w-[55vw] xl:w-[45vw] lg:h-[100vh] xl:h-[85vh] min-h-[85vh] p-[5vw] bg-[#ffffff] ">
+        <div className="w-full lg:w-[55vw] xl:w-[45vw] lg:h-full xl:h-full 2xl:h-full  p-[5vw] bg-[#ffffff] ">
           <form action="">
             <div className="flex flex-col">
               <label htmlFor="name" className="text-[1.22rem]  ">

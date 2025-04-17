@@ -17,17 +17,17 @@ const TutorialVideo = () => {
             </span>
           </p>
         </div>
-        <div className="w-full h-[70vh] lg:h-[68vh] flex flex-col lg:flex-row items-center justify-between">
-          <div className="w-full h-1/2 lg:w-1/2 lg:h-full mb-5 lg:mb-0 ">
+        <div className="w-full h-[70vh] lg:h-[68vh] flex flex-col lg:flex-row items-center justify-between ">
+          <div className="w-full h-1/2 lg:w-1/2 lg:h-[68vh] mb-5 lg:mb-0 ">
             <img
               src="/Slicing/Video/image_1.jpg"
               alt=""
               className="w-full h-full object-cover bg-center "
             />
           </div>
-          <div className="w-full h-1/2 lg:w-1/2 lg:h-full flex flex-col lg:gap-y-4 ">
+          <div className="w-full h-1/2 lg:w-1/2 lg:h-[68vh] flex flex-col lg:gap-y-4 overflow-hidden ">
             {/* 4-images */}
-            <div className="w-ful h-1/2 flex gap-4 mb-2 lg:mb-0 lg:px-[1rem] ">
+            <div className="w-full h-1/2 flex gap-4 mb-2 lg:mb-0 lg:px-[1rem] ">
               <img
                 src="/Slicing/Video/image_2.jpg"
                 alt=""

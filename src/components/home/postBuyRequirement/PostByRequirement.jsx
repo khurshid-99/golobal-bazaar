@@ -2,10 +2,10 @@ import React from "react";
 
 const PostByRequirement = () => {
   return (
-    <div className="w-full min-h-screen lg:h-[135vh] xl:h-[110vh] relative p-[5vw] ">
+    <div className="w-full min-h-screen lg:h-[135vh] xl:h-[165vh] 2xl:h-[110vh] relative p-[5vw] ">
       <div className="bg-[white] lg:bg-[url(/Slicing/PostBuyRequirement/back-image.jpg)] w-full h-full object-cover bg-cover bg-no-repeat flex flex-col lg:flex-row items-center justify-center">
         {/* section Left */}
-        <section className="w-full h-[45vh] lg:w-1/2 lg:h-full p-[5vw] text-white bg-[url(/Slicing/PostBuyRequirement/back-image.jpg)] lg:bg-[url()] bg-cover bg-center bg-no-repeat ">
+        <section className="w-full h-[55vh] lg:w-1/2 lg:h-full p-[5vw] text-white bg-[url(/Slicing/PostBuyRequirement/back-image.jpg)] lg:bg-[url()] bg-cover bg-center bg-no-repeat ">
           {/*  */}
           <h1 className="text-nowrap text-[1.6rem] lg:text-[2rem] 2xl:text-[2.8rem] font-[200] ">
             Nurturing Nature's

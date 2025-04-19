@@ -88,7 +88,7 @@ const ContactUs = () => {
                 name=""
                 rows={5}
                 cols={40}
-                maxlength={700}
+                maxLength={700}
                 id="help"
                 placeholder="Message"
                 className="outline-none border-b-[2px] border-[#C9CDD3] placeholder:text-[#C9CDD3] mt-5 "

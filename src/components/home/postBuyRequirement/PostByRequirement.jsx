@@ -1,8 +1,68 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 
 const PostByRequirement = () => {
+  const audioChunk = useRef([]);
+  const [recording, setRecording] = useState("");
+  const mediaRecoderRef = useRef(null);
+  const streamRef = useRef(null);
+
+  // style
+  const [removieMic, setRemovieMic] = useState(true);
+  const [save, setSave] = useState(false);
+  const [delet, setDelete] = useState(false);
+
+  const StartRecoding = async (e) => {
+    e.preventDefault();
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      streamRef.current = stream;
+
+      const mediaRecoder = new MediaRecorder(stream);
+      audioChunk.current = [];
+
+      mediaRecoder.ondataavailable = (e) => {
+        if (e.data.size > 0) {
+          audioChunk.current.push(e.data);
+        }
+      };
+
+      mediaRecoder.onstop = () => {
+        const audioBlob = new Blob(audioChunk.current, { type: "audio/wav" });
+        const audioURL = URL.createObjectURL(audioBlob);
+        setRecording(audioURL);
+      };
+
+      mediaRecoderRef.current = mediaRecoder;
+      mediaRecoder.start();
+
+      setRemovieMic((prev) => !prev);
+      setSave((prev) => !prev);
+    } catch (error) {
+      console.log("Recording error:", error);
+    }
+  };
+
+  const StopRecoding = () => {
+    try {
+      if (mediaRecoderRef.current) {
+        mediaRecoderRef.current.stop();
+      }
+
+      setSave((prev) => !prev);
+      setDelete((prev) => !prev);
+    } catch (error) {
+      console.error("Stop error:", error);
+    }
+  };
+
+  const Delete = () => {
+    setRecording("");
+    setRemovieMic((prev) => !prev);
+    setDelete((prev) => !prev);
+  };
+
   return (
-    <div className="w-full min-h-screen lg:h-[135vh] xl:h-[165vh] 2xl:h-[110vh] relative p-[5vw] ">
+    <div className="w-full min-h-screen lg:h-[125vh] 2xl:h-[118vh] relative p-[5vw] ">
       <div className="bg-[white] lg:bg-[url(/Slicing/PostBuyRequirement/back-image.jpg)] w-full h-full object-cover bg-cover bg-no-repeat flex flex-col lg:flex-row items-center justify-center">
         {/* section Left */}
         <section className="w-full h-[55vh] lg:w-1/2 lg:h-full p-[5vw] text-white bg-[url(/Slicing/PostBuyRequirement/back-image.jpg)] lg:bg-[url()] bg-cover bg-center bg-no-repeat ">
@@ -84,20 +144,15 @@ const PostByRequirement = () => {
               Post Buy <span className="font-semibold">Requirement</span>
             </h1>
             <h3 className="text-[.7rem] lg:text-[.9rem] 2xl:text-[1.4rem] text-nowrap mt-4 ">
-              Get the Best Deals and Exclusive Offers with{" "}
-              <span className="text-[#FF9812] ">Golobal Bazaar</span>
+              Get the Best Deals and <br /> Exclusive Offers with{" "}
+              <span className="text-[#FF9812] capitalize ">
+                Golobal Bazaar Nursery
+              </span>
             </h3>
-            <form action="">
+            <form>
               <div className="p-1 xl:p-4 rounded-xl bg-[#FDFDFD] drop-shadow-2xl mt-5 mb-8 flex items-center  ">
                 <select name="" id="" className="text-[1.25rem] ">
-                  <option value="">
-                    <img
-                      src="/Slicing/PostBuyRequirement/flag.png"
-                      alt=""
-                      className="w-[2rem] h-[2rem] object-cover "
-                    />
-                    91 +
-                  </option>
+                  <option value="">91 +</option>
                 </select>
                 <span className="inline-block w-[2px] h-[40px] bg-[#8a8a8a63] mx-5 "></span>
                 <input
@@ -132,21 +187,58 @@ const PostByRequirement = () => {
               <label htmlFor="" className="text-[1.20rem]">
                 Personalise your inquiry
               </label>
-              <div className="p-6 rounded-xl bg-[#FDFDFD] drop-shadow-2xl mt-5  ">
-                <div className="inline-block ">
-                  <img
-                    src="/Slicing/PostBuyRequirement/microfone.png"
-                    alt=""
-                    className="inline-block"
-                  />
-                  <h2 className="inline-block">Record</h2>
+              {/*  */}
+              <div className="p-6 rounded-xl bg-[#FDFDFD] drop-shadow-2xl mt-5 flex-col justify-center items-center ">
+                <div className="inline-block h-9 w-30">
+                  {removieMic ? (
+                    <button onClick={StartRecoding} className="">
+                      <img
+                        src="/Slicing/PostBuyRequirement/microfone.png"
+                        alt=""
+                        className="inline-block"
+                      />
+                      <h2 className="inline-block">Record</h2>
+                    </button>
+                  ) : (
+                    ""
+                  )}
                 </div>
 
-                <input
-                  type="text"
-                  placeholder="chick hear to record"
-                  className="w-full outline-none mt-2 "
-                />
+                <div className="h-[4rem] flex justify-between items-center ">
+                  <div>
+                    {recording.length > 0 ? (
+                      <>
+                        {recording && <audio controls src={recording}></audio>}
+                      </>
+                    ) : (
+                      ""
+                    )}
+                  </div>
+
+                  <div>
+                    {save ? (
+                      <button
+                        onClick={StopRecoding}
+                        className="px-4 py-2 bg-blue-600 text-white rounded"
+                      >
+                        Save Recording
+                      </button>
+                    ) : (
+                      ""
+                    )}
+                    {/* -- */}
+                    {delet ? (
+                      <button
+                        onClick={Delete}
+                        className="px-4 py-2 bg-red-600 text-white rounded"
+                      >
+                        Delete
+                      </button>
+                    ) : (
+                      ""
+                    )}
+                  </div>
+                </div>
               </div>
               <div className="flex justify-end mt-15 ">
                 <button className="uppercase flex items-center justify-center bg-[#F79311] px-[9vw] py-[4vw] lg:px-[4.5vw] lg:py-[1.8vw] xl:px-[4vw] xl:py-[1.3vw] rounded-full text-white tracking-[2px] text-[3vw] lg:text-[.8rem] 2xl:text-sm ">

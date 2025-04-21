@@ -34,6 +34,14 @@ const NavMeiddle = () => {
           About us
         </NavLink>
         <NavLink
+          to={"/shop"}
+          className={({ isActive }) =>
+            isActive ? "text-[#ff7e00]" : "hover:text-[#ff7e00]"
+          }
+        >
+          Shop
+        </NavLink>
+        <NavLink
           to={"/servis"}
           className={({ isActive }) =>
             isActive ? "text-[#ff7e00]" : "hover:text-[#ff7e00]"

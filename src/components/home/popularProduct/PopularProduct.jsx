@@ -74,7 +74,7 @@ const PopularProduct = () => {
               <h4 className="font-semibold lg:text-[1.8vw] xl:text-xl my-2 xl:my-4 ">
                 {product.name}
               </h4>
-              <h4>⭐⭐⭐⭐⭐</h4>
+              <h4>{product.rating}</h4>
               <div className="flex items-center justify-between">
                 <h4 className="text-[#787878] lg:text-[1.8vw] xl:text-[20px] font-medium ">
                   MRP:{" "}

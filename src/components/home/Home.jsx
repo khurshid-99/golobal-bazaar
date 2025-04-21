@@ -11,6 +11,7 @@ import ClientSays from "./clientSays/ClientSays";
 import PopularProduct from "./popularProduct/PopularProduct";
 import ContactUs from "./contactUs/ContactUs";
 import StayContact from "./stayContact/StayContact";
+import CompayerProduct from "./compayer/CompayerProduct";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <PostByRequirement />
       <Category />
       <TrandingPlant />
+      <CompayerProduct />
       <Recommender />
       <TutorialVideo />
       <WorkPlace />

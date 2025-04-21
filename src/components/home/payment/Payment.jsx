@@ -25,16 +25,22 @@ const Payment = () => {
               spaceBetween: 1.5,
             },
             768: {
-              slidesPerView: 2,
+              slidesPerView: 1.1,
             },
             1024: {
               slidesPerView: 3,
+            },
+            1280: {
+              slidesPerView: 3.2,
+            },
+            1536: {
+              slidesPerView: 4,
             },
           }}
           className="mySwiper"
         >
           <SwiperSlide>
-            <div className="h-[20vh] w-[80vw] lg:h-[25vh] lg:w-[25vw] xl:w-[25vw] 2xl:h-[15vh] 2xl:w-[20vw] flex items-center gap-x-5 border border-[gray]/50 p-2 rounded shrink-0 ">
+            <div className="h-[20vh] w-[80vw] lg:h-[25vh] lg:w-[25vw] xl:w-[25vw] 2xl:h-[15vh] 2xl:w-[20vw] flex items-center gap-x-5 border border-[gray]/50 p-2 rounded shrink-0 bg-[#15ff00]">
               <img
                 src="/Slicing/Banner/Security.png"
                 alt=""
@@ -42,7 +48,7 @@ const Payment = () => {
               />
               <div className="">
                 <h1 className="uppercase mb-3 ">Secure payment</h1>
-                <p className="">
+                <p className="text-wrap">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Similique,
                 </p>

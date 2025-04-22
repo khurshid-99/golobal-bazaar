@@ -1,21 +1,15 @@
 import React from "react";
 import { NavLink } from "react-router";
-import { Link } from "react-router";
 
-const NavMeiddle = () => {
+const NavMeiddle = ({ fn }) => {
   return (
     <>
-    <div className="w-[10rem] py-1 lg:hidden flex items-center justify-center gap-x-1">
-          <label htmlFor="search">
-            <img src="/Slicing/Header/search-icon.png" alt="" />
-          </label>
-          <input
-            type="text"
-            id="search"
-            placeholder="Search"
-            className="outline-none w-full"
-          />
+      <div className="w-[10rem] py-1 lg:hidden flex items-center justify-center gap-x-1">
+        <div onClick={fn} className="flex items-center gap-x-2">
+          <img src="/Slicing/Header/search-icon.png" alt="" />
+          <h4>Search</h4>
         </div>
+      </div>
       <ul className="hidden lg:flex items-center justify-center gap-x-7 ">
         <NavLink
           to={"/"}

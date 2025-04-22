@@ -11,8 +11,6 @@ const PostByRequirement = () => {
   const [save, setSave] = useState(false);
   const [delet, setDelete] = useState(false);
 
-
-
   const StartRecoding = async (e) => {
     e.preventDefault();
     try {
@@ -140,7 +138,7 @@ const PostByRequirement = () => {
           </div>
         </section>
         {/* section Right */}
-        <section className="w-full h-[80vh] lg:w-1/2 lg:h-full pt-[5vw] ">
+        <section className="w-full h-[90vh] lg:w-1/2 lg:h-full pt-[5vw] ">
           <div className="bg-[#ffffff] w-full h-full lg:p-[3vw] 2xl:pl-[5vw] 2xl:pt-[3vw] ">
             <h1 className="text-[1.5rem] lg:text-[2.2rem] 2xl:text-[3.3rem] text-nowrap font-[300] ">
               Post Buy <span className="font-semibold">Requirement</span>

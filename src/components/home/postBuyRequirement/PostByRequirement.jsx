@@ -1,10 +1,15 @@
-import React, { useRef, useState } from "react";
+import gsap from "gsap";
+import React, { useEffect, useRef, useState } from "react";
 
 const PostByRequirement = () => {
   const audioChunk = useRef([]);
   const [recording, setRecording] = useState("");
   const mediaRecoderRef = useRef(null);
   const streamRef = useRef(null);
+
+  // mick-Blink
+  const mickBlinkOneRef = useRef();
+  const mickBlinkTwoRef = useRef();
 
   // style
   const [removieMic, setRemovieMic] = useState(true);
@@ -60,6 +65,27 @@ const PostByRequirement = () => {
     setRemovieMic((prev) => !prev);
     setDelete((prev) => !prev);
   };
+
+  useEffect(() => {
+    if (save && mickBlinkOneRef) {
+      gsap.to(mickBlinkOneRef.current, {
+        width: "3rem",
+        height: "3rem",
+        duration: 0.5,
+        repeat: -1,
+        yoyo: true,
+        ease: "none",
+      });
+      gsap.to(mickBlinkTwoRef.current, {
+        width: "5rem",
+        height: "5rem",
+        duration: 0.5,
+        repeat: -1,
+        yoyo: true,
+        ease: "none",
+      });
+    }
+  });
 
   return (
     <div className="w-full min-h-screen lg:h-[125vh] 2xl:h-[118vh] relative p-[5vw] ">
@@ -203,9 +229,9 @@ const PostByRequirement = () => {
                     ""
                   )}
                 </div>
-
+                {/* recoder */}
                 <div className="h-[4rem] flex justify-between items-center ">
-                  <div>
+                  <div className="">
                     {recording.length > 0 ? (
                       <>
                         {recording && <audio controls src={recording}></audio>}
@@ -213,16 +239,41 @@ const PostByRequirement = () => {
                     ) : (
                       ""
                     )}
-                  </div>
 
-                  <div>
+                    {/* - mike blink - */}
                     {save ? (
-                      <button
-                        onClick={StopRecoding}
-                        className="px-4 py-2 bg-blue-600 text-white rounded"
-                      >
-                        Save Recording
-                      </button>
+                      <div className="relative flex items-center justify-center ml-10 ">
+                        <div
+                          ref={mickBlinkOneRef}
+                          className="inline-block absolute w-[6rem] h-[6rem] rounded-full bg-[#CCCACA] top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-[554] "
+                        />
+                        <div
+                          ref={mickBlinkTwoRef}
+                          className="inline-block absolute w-[7rem] h-[7rem] rounded-full bg-[#EFEFEF] top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-[553] "
+                        />
+                        <div className="flex items-center justify-center p-[1rem] w-[3rem] h-[3rem] rounded-full bg-[#1F78A0]  z-[554]  ">
+                          <img
+                            src="/Slicing/mick.png"
+                            alt=""
+                            className="relative z-[555] "
+                          />
+                        </div>
+                      </div>
+                    ) : (
+                      ""
+                    )}
+                  </div>
+                  {/* --- */}
+                  <div className="bg-[green] ">
+                    {save ? (
+                      <div>
+                        <button
+                          onClick={StopRecoding}
+                          className="px-4 py-2 bg-blue-600 text-white rounded"
+                        >
+                          Save Recording
+                        </button>
+                      </div>
                     ) : (
                       ""
                     )}
@@ -240,6 +291,7 @@ const PostByRequirement = () => {
                   </div>
                 </div>
               </div>
+              {/* submit-button */}
               <div className="flex justify-end mt-15 ">
                 <button className="uppercase flex items-center justify-center bg-[#F79311] px-[9vw] py-[4vw] lg:px-[4.5vw] lg:py-[1.8vw] xl:px-[4vw] xl:py-[1.3vw] rounded-full text-white tracking-[2px] text-[3vw] lg:text-[.8rem] 2xl:text-sm ">
                   submit

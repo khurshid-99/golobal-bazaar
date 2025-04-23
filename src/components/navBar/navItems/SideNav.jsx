@@ -99,7 +99,7 @@ const SideNav = () => {
             <div className="flex items-center mr-5 ">
               <div className="">
                 <img
-                  src="Slicing/header/Flag-ind.png"
+                  src="/Slicing/PostBuyRequirement/flag.png"
                   alt=""
                   className="object-cover object-center"
                 />

@@ -87,6 +87,11 @@ const PostByRequirement = () => {
     }
   });
 
+  const HandelSubmit = (e)=>{
+    e.preventDefault()
+    
+  }
+
   return (
     <div className="w-full min-h-screen lg:h-[125vh] 2xl:h-[118vh] relative p-[5vw] ">
       <div className="bg-[white] lg:bg-[url(/Slicing/PostBuyRequirement/back-image.jpg)] w-full h-full object-cover bg-cover bg-no-repeat flex flex-col lg:flex-row items-center justify-center">
@@ -175,7 +180,7 @@ const PostByRequirement = () => {
                 Golobal Bazaar Nursery
               </span>
             </h3>
-            <form>
+            <form onSubmit={HandelSubmit}>
               <div className="p-1 xl:p-4 rounded-xl bg-[#FDFDFD] drop-shadow-2xl mt-5 mb-8 flex items-center  ">
                 <select name="" id="" className="text-[1.25rem] ">
                   <option value="">91 +</option>

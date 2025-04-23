@@ -115,8 +115,8 @@ const CompayerProduct = () => {
   };
 
   useEffect(() => {
-    console.log("Product One:", productOne);
-    console.log("Product Two:", productTwo);
+    // console.log("Product One:", productOne);
+    // console.log("Product Two:", productTwo);
   }, [productOne, productTwo]);
 
   return (

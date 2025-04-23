@@ -264,12 +264,12 @@ const PostByRequirement = () => {
                     )}
                   </div>
                   {/* --- */}
-                  <div className="bg-[green] ">
+                  <div className="">
                     {save ? (
                       <div>
                         <button
                           onClick={StopRecoding}
-                          className="px-4 py-2 bg-blue-600 text-white rounded"
+                          className="px-4 py-2.5 bg-blue-600 text-white rounded-[50px]"
                         >
                           Save Recording
                         </button>
@@ -281,7 +281,7 @@ const PostByRequirement = () => {
                     {delet ? (
                       <button
                         onClick={Delete}
-                        className="px-4 py-2 bg-red-600 text-white rounded"
+                        className="px-4 py-2 bg-red-600 text-white rounded-[50px] "
                       >
                         Delete
                       </button>
